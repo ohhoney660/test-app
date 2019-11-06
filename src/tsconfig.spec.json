@@ -2,10 +2,19 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
+    "baseUrl": "./",
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "paths": {
+      "@test_app/user": [
+        "app/modules/user"
+      ],
+      "@test_app/home":[
+        "app/modules/home"
+      ]
+    }
   },
   "files": [
     "test.ts",

@@ -2,6 +2,17 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
+    "experimentalDecorators":true,
+    "baseUrl": "./",
+    "paths": {
+      "@test_app/user": [
+        "app/modules/user"
+      ],
+      "@test_app/home":[
+        "app/modules/home"
+      ]
+    },
+    "module": "es2015",
     "types": []
   },
   "exclude": [
